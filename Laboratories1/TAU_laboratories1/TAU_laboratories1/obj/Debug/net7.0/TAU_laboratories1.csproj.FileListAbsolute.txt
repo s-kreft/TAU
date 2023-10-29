@@ -1,0 +1,14 @@
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\bin\Debug\net7.0\TAU_laboratories1.exe
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\bin\Debug\net7.0\TAU_laboratories1.deps.json
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\bin\Debug\net7.0\TAU_laboratories1.runtimeconfig.json
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\bin\Debug\net7.0\TAU_laboratories1.dll
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\bin\Debug\net7.0\TAU_laboratories1.pdb
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\TAU_laboratories1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\TAU_laboratories1.AssemblyInfoInputs.cache
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\TAU_laboratories1.AssemblyInfo.cs
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\TAU_laboratories1.csproj.CoreCompileInputs.cache
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\TAU_laboratories1.dll
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\refint\TAU_laboratories1.dll
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\TAU_laboratories1.pdb
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\TAU_laboratories1.genruntimeconfig.cache
+C:\Projects\Studia\TAU\Laboratories1\TAU_laboratories1\TAU_laboratories1\obj\Debug\net7.0\ref\TAU_laboratories1.dll
