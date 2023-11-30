@@ -6,3 +6,12 @@ INFO:root:75 - minutowy test pass - text was found
 INFO:root:6,00 test pass - text found
 INFO:root:3,00 test pass - text found
 INFO:root:All assertions passed
+INFO:root:Test start
+INFO:root:na jeden przejazd test pass - text was found 
+INFO:root:4,80 test pass - text found
+INFO:root:2,40 test pass - text found
+INFO:root:75 - minutowy test pass - text was found 
+INFO:root:6,00 test pass - text found
+INFO:root:3,00 test pass - text found
+INFO:root:All assertions passed
+INFO:root:Tests passed for all browsers

@@ -1,0 +1,9 @@
+INFO:root:Test start
+INFO:root:wrong email test input
+INFO:root:wrong email test pass - email not found
+INFO:root:All assertions passed
+INFO:root:Test start
+INFO:root:wrong email test input
+INFO:root:wrong email test pass - email not found
+INFO:root:All assertions passed
+INFO:root:Tests passed for all browsers
