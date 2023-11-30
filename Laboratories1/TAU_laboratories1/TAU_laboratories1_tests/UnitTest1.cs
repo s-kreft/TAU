@@ -5,7 +5,11 @@ namespace TAU_laboratories1_tests
         [Fact]
         public void Test1()
         {
+            //Arrange
+            
+            //Act
 
+            //Assert
         }
     }
 }

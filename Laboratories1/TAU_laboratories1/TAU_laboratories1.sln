@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAU_laboratories1", "TAU_laboratories1\TAU_laboratories1.csproj", "{C78AE3C4-C6E0-4341-954F-943099F43925}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAU_laboratories1_tests", "TAU_laboratories1_tests\TAU_laboratories1_tests.csproj", "{ED9025B8-40C6-45DB-B8B4-A3A25763EAC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C78AE3C4-C6E0-4341-954F-943099F43925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C78AE3C4-C6E0-4341-954F-943099F43925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C78AE3C4-C6E0-4341-954F-943099F43925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9025B8-40C6-45DB-B8B4-A3A25763EAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9025B8-40C6-45DB-B8B4-A3A25763EAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9025B8-40C6-45DB-B8B4-A3A25763EAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9025B8-40C6-45DB-B8B4-A3A25763EAC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
