@@ -80,8 +80,9 @@ def GameMovements(k: keyboard.KeyboardEvent):
                 board[playerPositionY][playerPositionX] = '#'
                 playerPositionX += 1
                 board[playerPositionY][playerPositionX] = 'P'
+                print("")
                 print(board)
-                print("prawa szczauka")
+                print("Movement Right")
 
     if k.name == 'left':
         if (playerPositionX - 1 > 4 or playerPositionX - 1 < 0):
@@ -93,8 +94,9 @@ def GameMovements(k: keyboard.KeyboardEvent):
                 board[playerPositionY][playerPositionX] = '#'
                 playerPositionX -= 1
                 board[playerPositionY][playerPositionX] = 'P'
+                print("")
                 print(board)
-                print("lewa szczauka")
+                print("Movement Left")
 
     if k.name == 'up':
         if (playerPositionY - 1 > 4 or playerPositionY - 1 < 0):
@@ -106,8 +108,9 @@ def GameMovements(k: keyboard.KeyboardEvent):
                 board[playerPositionY][playerPositionX] = '#'
                 playerPositionY -= 1
                 board[playerPositionY][playerPositionX] = 'P'
+                print("")
                 print(board)
-                print("gorna szczauka")
+                print("Movement Up")
         
     if k.name == 'down':
         if (playerPositionY + 1 > 4 or playerPositionY + 1 < 0):
@@ -119,8 +122,9 @@ def GameMovements(k: keyboard.KeyboardEvent):
                 board[playerPositionY][playerPositionX] = '#'
                 playerPositionY += 1
                 board[playerPositionY][playerPositionX] = 'P'
+                print("")
                 print(board)
-                print("dolna szczauka")
+                print("Movement Down")
 
 Game()
 
