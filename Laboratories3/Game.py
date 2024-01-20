@@ -57,29 +57,10 @@ def ShowBoard():
     print(board)
 
 def Gameplay():
-    # key = keyboard.read_key()
-    # key = ReadKey()
-    # print(key)    
-    # GameMovements(key)
     global end
     keyboard.on_press(GameMovements)
     while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
         i = 0
-    # while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
-    #     key = ReadKey()
-    #     # print(key)
-    #     GameMovements(key)
-    #         # break
-    # else:            
-    #     print("You win!")
-
-    # while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
-    #     if keyboard.is_pressed('q'):
-    #         break
-    #     else:  
-    #         GameMovements()
-    # else:            
-    #     print("You win!")
 
 def GameMovements(k: keyboard.KeyboardEvent):
     global playerPositionX
@@ -89,32 +70,43 @@ def GameMovements(k: keyboard.KeyboardEvent):
     global board
 
     if k.name == 'right':
-        board[playerPositionY][playerPositionX] = '#'
-        playerPositionX += 1
-        board[playerPositionY][playerPositionX] = 'P'
-        print(board)
-        print("prawa szczauka")
+        if board[playerPositionY][playerPositionX + 1] == b'@':
+            print("Obstacle!")
+        else:
+            playerPositionX += 1
+            board[playerPositionY][playerPositionX] = 'P'
+            print(board)
+            print("prawa szczauka")
 
     if k.name == 'left':
-        board[playerPositionY][playerPositionX] = '#'
-        playerPositionX -= 1
-        board[playerPositionY][playerPositionX] = 'P'
-        print(board)
-        print("lewa szczauka")
+        if board[playerPositionY][playerPositionX - 1] == b'@':
+            print('Obstacle!')
+        else:
+            board[playerPositionY][playerPositionX] = '#'
+            playerPositionX -= 1
+            board[playerPositionY][playerPositionX] = 'P'
+            print(board)
+            print("lewa szczauka")
 
     if k.name == 'up':
-        board[playerPositionY][playerPositionX] = '#'
-        playerPositionY -= 1
-        board[playerPositionY][playerPositionX] = 'P'
-        print(board)
-        print("gorna szczauka")
+        if board[playerPositionY - 1][playerPositionX] == b'@':
+            print('Obstacle!')
+        else:
+            board[playerPositionY][playerPositionX] = '#'
+            playerPositionY -= 1
+            board[playerPositionY][playerPositionX] = 'P'
+            print(board)
+            print("gorna szczauka")
         
     if k.name == 'down':
-        board[playerPositionY][playerPositionX] = '#'
-        playerPositionY += 1
-        board[playerPositionY][playerPositionX] = 'P'
-        print(board)
-        print("dolna szczauka")
+        if board[playerPositionY + 1][playerPositionX] == b'@':
+            print('Obstacle!')
+        else:
+            board[playerPositionY][playerPositionX] = '#'
+            playerPositionY += 1
+            board[playerPositionY][playerPositionX] = 'P'
+            print(board)
+            print("dolna szczauka")
                     
 Game()
 #print(board)
