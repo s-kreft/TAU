@@ -63,6 +63,7 @@ def Gameplay():
         i = 0
     else:
          print("You Win!")
+
 def GameMovements(k: keyboard.KeyboardEvent):
     global playerPositionX
     global playerPositionY
@@ -126,7 +127,7 @@ def GameMovements(k: keyboard.KeyboardEvent):
                 print(board)
                 print("Movement Down")
 
-Game()
+#Game()
 
 
 
