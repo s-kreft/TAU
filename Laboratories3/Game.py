@@ -8,8 +8,9 @@ columns = 0
 board = []
 playerPositionX = 0
 playerPositionY = 0
-endPositionX = 5
+endPositionX = 4
 endPositionY = 0
+end = False
 
 def Game():
     PrepareGame()
@@ -21,22 +22,6 @@ def PrepareGame():
     StartField()
     EndField()
     ShowBoard()
-   # MoveRight()
-
-def Gameplay():
-    while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
-            GameMovements()
-    else:            
-        print("You win!")
-
-    # while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
-    #     if keyboard.is_pressed('q'):
-    #         break
-    #     else:  
-    #         GameMovements()
-    # else:            
-    #     print("You win!")
-
     
 def GenerateBoard():
     global rows
@@ -60,7 +45,7 @@ def EndField():
     endPositionY = randomField
 
 def ObstaclesGenerator():
-    obstaclesNumber = 10
+    obstaclesNumber = 8
     x = 0
     while x <= obstaclesNumber:
         randomRow = random.randint(0,4)
@@ -71,47 +56,66 @@ def ObstaclesGenerator():
 def ShowBoard():
     print(board)
 
+def Gameplay():
+    # key = keyboard.read_key()
+    # key = ReadKey()
+    # print(key)    
+    # GameMovements(key)
+    global end
+    keyboard.on_press(GameMovements)
+    while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
+        i = 0
+    # while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
+    #     key = ReadKey()
+    #     # print(key)
+    #     GameMovements(key)
+    #         # break
+    # else:            
+    #     print("You win!")
 
-def GameMovements():
+    # while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
+    #     if keyboard.is_pressed('q'):
+    #         break
+    #     else:  
+    #         GameMovements()
+    # else:            
+    #     print("You win!")
+
+def GameMovements(k: keyboard.KeyboardEvent):
     global playerPositionX
     global playerPositionY
     global endPositionX
     global endPositionY
     global board
 
-    key = keyboard.wait()
-    if key == 'q':
+    if k.name == 'right':
         board[playerPositionY][playerPositionX] = '#'
         playerPositionX += 1
         board[playerPositionY][playerPositionX] = 'P'
         print(board)
         print("prawa szczauka")
 
-    if keyboard.is_pressed('left'):
+    if k.name == 'left':
         board[playerPositionY][playerPositionX] = '#'
         playerPositionX -= 1
         board[playerPositionY][playerPositionX] = 'P'
         print(board)
         print("lewa szczauka")
-        
 
-    if keyboard.is_pressed('up'):
+    if k.name == 'up':
         board[playerPositionY][playerPositionX] = '#'
         playerPositionY -= 1
         board[playerPositionY][playerPositionX] = 'P'
         print(board)
         print("gorna szczauka")
         
-
-    if keyboard.is_pressed('down'):
+    if k.name == 'down':
         board[playerPositionY][playerPositionX] = '#'
         playerPositionY += 1
         board[playerPositionY][playerPositionX] = 'P'
         print(board)
         print("dolna szczauka")
                     
-
-
 Game()
 #print(board)
 
