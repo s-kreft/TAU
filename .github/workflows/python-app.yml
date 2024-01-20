@@ -37,4 +37,4 @@ jobs:
     - name: Test with pytest
       run: |
          cd Laboratories3
-         python -m unittest -v Game_Tests.py
+         sudo python -m unittest -v Game_Tests.py
