@@ -10,7 +10,7 @@ playerPositionX = 0
 playerPositionY = 0
 endPositionX = 4
 endPositionY = 0
-end = False
+win = False
 
 def Game():
     PrepareGame()
@@ -57,11 +57,12 @@ def ShowBoard():
     print(board)
 
 def Gameplay():
-    global end
+    global win
     keyboard.on_press(GameMovements)
     while not (playerPositionX == endPositionX and playerPositionY == endPositionY):
         i = 0
     else:
+         win = True
          print("You Win!")
 
 def GameMovements(k: keyboard.KeyboardEvent):
@@ -127,7 +128,7 @@ def GameMovements(k: keyboard.KeyboardEvent):
                 print(board)
                 print("Movement Down")
 
-#Game()
+# Game()
 
 
 

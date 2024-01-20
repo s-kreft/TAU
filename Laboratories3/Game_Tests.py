@@ -51,7 +51,7 @@ class GameTestCase(unittest.TestCase):
             flag = True       
         self.assertTrue(flag)
     
-    def test_player_cant_go_through_obstacle(self):
+    def test_player_cant_go_through_obstacle_right(self):
         playerPositionX = 0
         Game.playerPositionX = 0
         Game.playerPositionY = 0
@@ -60,3 +60,43 @@ class GameTestCase(unittest.TestCase):
         key = keyboard.KeyboardEvent(name='right', event_type='down', scan_code=0)
         Game.GameMovements(key)
         self.assertEqual(playerPositionX, Game.playerPositionX)
+
+    def test_player_cant_go_through_obstacle_left(self):
+        playerPositionX = 3
+        Game.playerPositionX = 3
+        Game.playerPositionY = 0
+        Game.board[0][2] = '@'
+
+        key = keyboard.KeyboardEvent(name='left', event_type='down', scan_code=0)
+        Game.GameMovements(key)
+        self.assertEqual(playerPositionX, Game.playerPositionX)
+
+    def test_player_cant_go_through_obstacle_up(self):
+        playerPositionY = 1
+        Game.playerPositionX = 0
+        Game.playerPositionY = 1
+        Game.board[0][0] = '@'
+
+        key = keyboard.KeyboardEvent(name='up', event_type='down', scan_code=0)
+        Game.GameMovements(key)
+        self.assertEqual(playerPositionY, Game.playerPositionY)
+    
+    def test_player_cant_go_through_obstacle_down(self):
+        playerPositionY = 0
+        Game.playerPositionX = 0
+        Game.playerPositionY = 0
+        Game.board[1][0] = '@'
+
+        key = keyboard.KeyboardEvent(name='down', event_type='down', scan_code=0)
+        Game.GameMovements(key)
+        self.assertEqual(playerPositionY, Game.playerPositionY)
+    
+    
+    def test_game_is_winnable(self):
+        Game.playerPositionX = Game.endPositionX
+        Game.playerPositionY = Game.endPositionY
+
+        Game.Gameplay()
+        self.assertTrue(Game.win)
+
+
