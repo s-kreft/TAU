@@ -79,41 +79,37 @@ def GameMovements():
     global endPositionY
     global board
 
-    while True:       
-        try:
-            if keyboard.is_pressed('right'):
-                board[playerPositionY][playerPositionX] = '#'
-                playerPositionX += 1
-                board[playerPositionY][playerPositionX] = 'P'
-                print(board)
-                print("prawa szczauka")
-                break
+    key = keyboard.wait()
+    if key == 'q':
+        board[playerPositionY][playerPositionX] = '#'
+        playerPositionX += 1
+        board[playerPositionY][playerPositionX] = 'P'
+        print(board)
+        print("prawa szczauka")
 
-            if keyboard.is_pressed('left'):
-                board[playerPositionY][playerPositionX] = '#'
-                playerPositionX -= 1
-                board[playerPositionY][playerPositionX] = 'P'
-                print(board)
-                print("lewa szczauka")
-                break
+    if keyboard.is_pressed('left'):
+        board[playerPositionY][playerPositionX] = '#'
+        playerPositionX -= 1
+        board[playerPositionY][playerPositionX] = 'P'
+        print(board)
+        print("lewa szczauka")
+        
 
-            if keyboard.is_pressed('up'):
-                board[playerPositionY][playerPositionX] = '#'
-                playerPositionY -= 1
-                board[playerPositionY][playerPositionX] = 'P'
-                print(board)
-                print("gorna szczauka")
-                break
+    if keyboard.is_pressed('up'):
+        board[playerPositionY][playerPositionX] = '#'
+        playerPositionY -= 1
+        board[playerPositionY][playerPositionX] = 'P'
+        print(board)
+        print("gorna szczauka")
+        
 
-            if keyboard.is_pressed('down'):
-                board[playerPositionY][playerPositionX] = '#'
-                playerPositionY += 1
-                board[playerPositionY][playerPositionX] = 'P'
-                print(board)
-                print("dolna szczauka")
-                break
-        except:
-            break
+    if keyboard.is_pressed('down'):
+        board[playerPositionY][playerPositionX] = '#'
+        playerPositionY += 1
+        board[playerPositionY][playerPositionX] = 'P'
+        print(board)
+        print("dolna szczauka")
+                    
 
 
 Game()
